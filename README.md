@@ -50,9 +50,12 @@ Remember that depends of your computer, lambda, cloud run, etc resources spead w
 ## Dependencies
 
 Flask
+
 Flask-CORS
+
 OpenAI
-WhisperASR
+
+Whisper
 
 
 ## Contributing
