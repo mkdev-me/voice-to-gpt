@@ -1,16 +1,17 @@
-Seamless integration between the Whisper Automatic Speech Recognition (ASR) library and the OpenAI GPT API. This web page allows users to record a an audio clip from your browser, transcribe the recorded speech into text using Whisper, and then use the GPT API to generate an appropriate response based on the transcribed text, and last speak the output to you.
-
-functionalities:
-
-* The record_audio function captures audio input from the user's microphone and saves it as a WAV file. Audio stop to be recorded after 1 second of silence
-* The transcribe_audio function utilizes the Whisper ASR library to transcribe the recorded audio into text. It also detects the spoken language and displays it.
-* The ask_gpt function sends the transcribed text as a prompt to the OpenAI GPT API and receives a generated response based on the input.
-* The script then prints the GPT-generated response for the user to see.
-* The main advantage of this script is that it allows users to interact with the GPT API simply by speaking, without the need to manually type in their questions or prompts.
-* During the image creation all the basic model for whisper are downloaded. If you want large or medium you need to change that
-* By default GPT accept every language but current speak is only in english
+# VOICE TO GPT
 
 
+Voice-to-GPT is a web application that allows users to interact with an AI assistant using voice commands. The application records users' voice input, transcribes it, and sends the transcribed text to OpenAI's GPT-4 for processing. The AI assistant responds with an answer, which is then converted back to speech and played to the user.
+
+## **functionalities:**
+
+* Voice input: Users can speak their questions or commands directly into their microphone.
+* Automatic speech recognition (ASR): The application transcribes users' voice input using Whisper ASR.
+* AI assistant: The transcribed text is sent to OpenAI's GPT-4, which processes the input and generates an appropriate response.
+* Text-to-speech (TTS): The AI assistant's response is converted back to speech and played to the user.
+* Please follow the instructions in the "Installation" section to set up and run the application.
+
+## Installation
 
 remember to add the GPT API key in you env first
 
@@ -35,3 +36,29 @@ and enjoy
 
 
 Remember that depends of your computer, lambda, cloud run, etc resources spead will be different
+
+
+## Usage
+
+
+1. Open the application in a web browser.
+2. Click the "Record" button and speak your question or command into the microphone.
+3. Click the "Stop" button when you're done speaking.
+4. The application will transcribe your speech, send the text to GPT-4, and play the AI assistant's response.
+
+
+## Dependencies
+
+Flask
+Flask-CORS
+OpenAI
+WhisperASR
+
+
+## Contributing
+
+If you'd like to contribute to this project, please submit a pull request with your proposed changes. Be sure to provide a clear description of the changes and any relevant information.
+
+## License
+
+This project is licensed under the MIT License. Please refer to the LICENSE file for more information.
