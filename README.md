@@ -11,6 +11,14 @@ Voice-to-GPT is a web application that allows users to interact with an AI assis
 * Text-to-speech (TTS): The AI assistant's response is converted back to speech and played to the user.
 * Please follow the instructions in the "Installation" section to set up and run the application.
 
+
+
+
+https://user-images.githubusercontent.com/13846927/228223007-d43a2014-6d41-4d48-afad-ed74db02fd68.mp4
+
+
+
+
 ## Installation
 
 remember to add the GPT API key in you env first
